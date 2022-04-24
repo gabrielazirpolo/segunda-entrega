@@ -1,2 +1,71 @@
-h1 {
-  color: red; }
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none !important;
+  color: #000000; }
+
+/* ----- AQUI INICIAN LOS CODIGOS DE MENU------*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 100; }
+
+/*HEADER SUPERIOR*/
+.header__superior {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; }
+  .header__superior .logo img {
+    width: 250px; }
+  .header__superior .search input {
+    width: 300px;
+    padding: 10px; }
+
+/*BARRA MENU*/
+.container__menu {
+  width: 100%;
+  height: 70px;
+  background: black;
+  padding: 0px 20px; }
+
+.menu {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%; }
+
+nav {
+  height: 100%; }
+  nav ul {
+    *height: 100%;
+    /*modificación bootstrap*/
+    display: flex;
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      height: 100%;
+      list-style: none;
+      position: relative;
+      margin-top: -24px;
+      /*modificación bootstrap*/ }
+      nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 14px;
+        color: white !important;
+        text-transform: uppercase;
+        font-size: 17px;
+        transition: all 300ms ease; }
+        nav ul li a:hover {
+          transform: scale(1.1); }

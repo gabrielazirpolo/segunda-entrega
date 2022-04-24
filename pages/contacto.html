@@ -15,10 +15,7 @@
 
         <div class="header__superior">
             <div class="logo">
-                <a href="../index.html"><img src="../imagenes/logo azur.png" alt=""></a> 
-            </div>
-            <div class="search">
-                <input type="search" placeholder="¿Qué deseas buscar?">
+                <a href="../index.html"><img src="../imagenes/logo azur.png" alt="Logo Azur"></a> 
             </div>
         </div>
 
@@ -34,13 +31,8 @@
                 <nav>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                            <li><a>Subasta</a>
-                                <ul>
-                                    <li><a href="../pages/subasta actual.html">Subasta Actual</a></li>
-                                    <li><a href="../pages/subasta pasada.html">Subastas pasadas</a></li>
-                                </ul>
-                            </li>
-                        <li><a href="../pages/muestras.html">Muestras</a></li>
+                        <li><a href="../pages/subasta actual.html">Subasta Actual</a></li>
+                        <li><a href="../pages/subasta pasada.html">Subastas Pasadas</a></li>
                         <li><a href="../pages/sobre nosotros.html">Sobre nosotros</a></li>
                         <li><a href="../pages/contacto.html">Contacto</a></li>
                     </ul>
@@ -54,11 +46,69 @@
     <main>
 
         <section id="textoMadre">
-            <h2 id="titulos">Contacto</h2>
-            
-        </section>
 
-        
+            <div class="subastas__pasadas">
+                <h2 id="titulos">Contacto</h2> 
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="contact_form">
+
+                <div class="formulario">
+                    <p>Escríbenos y en breve los pondremos en contacto</p>
+            
+            
+                      <form action="submeter-formulario.php" method="post">       
+            
+                        
+                            <p>
+                              <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+                          
+                            <p>
+                              <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                            </p>
+                        
+                            <p>
+                              <label for="telefone" class="colocar_telefono">Teléfono
+                              </label>
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                            </p>       
+                          
+                            <p>
+                              <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                            </p>    
+                          
+                            <p>
+                              <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                              </label>                     
+                                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                            </p>                    
+                          
+                            <button class="enviar"><p>Enviar</p></button>
+            
+                            <p class="aviso">
+                              <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>          
+                        
+                      </form>
+                </div>  
+              </div>
+            
+            
+            
+        </section> 
     
 
         

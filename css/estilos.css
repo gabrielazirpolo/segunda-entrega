@@ -16,7 +16,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background: black;
+    background: white;
     z-index: 100;
 }
 
@@ -35,17 +35,12 @@ header{
     width: 250px;
 }
 
-.search input{
-    width: 300px;
-    padding: 10px;
-}
-
 /*BARRA MENU*/
 
 .container__menu{
     width: 100%;
     height: 70px;
-    background: black;
+    background: white;
     padding: 0px 20px;
 }
 
@@ -62,6 +57,7 @@ nav{
 nav > ul{
     *height: 100%; /*modificación bootstrap*/
     display: flex;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
 }
@@ -79,7 +75,7 @@ nav > ul > li > a{
     display: flex;
     align-items: center;
     padding: 14px;
-    color: white !important;
+    color: black !important;
     text-transform: uppercase;
     font-size: 17px;
     transition: all 300ms ease;
@@ -89,65 +85,11 @@ nav > ul > li > a:hover{
     transform: scale(1.1);
 }
 
-/*SUBMENU*/
-
-nav ul li ul{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 9px;
-    left: -5px;
-    padding: 14px 0px;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 10;
-    transition: all 300ms ease;
-}
-
-nav ul li:hover ul{
-    visibility: visible;
-    opacity: 1;
-    top: 70px;
-}
-
-nav ul li ul:before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid white;
-    position: absolute;
-    top: -12px;
-    left: 20px;
-}
-
-nav ul li ul li a{
-    display: block;
-    color: black;
-    padding: 6px;
-    padding-left: 14px;
-    margin-top: 35px; /*modificacion bootstrap*/
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: all 300ms ease;
-}
-
-nav ul li ul li a:hover{
-    background: black;
-    color:  white;
-    transform: scale(1.2);
-    padding-left: 30px;
-    font-size: 14px;
-}
-
 /*ELEMENTOS RESPONSIVOS DEL MENU*/
 
 .icon__menu{
     font-size: 26px;
-    color: white;
+    color: black;
     cursor: pointer;
     width: 26px;
     height: 100%;
@@ -160,7 +102,7 @@ nav ul li ul li a:hover{
     width: 26px;
     height: 100%;
     display: none;
-    background-color: black;
+    background-color: white; /*ver*/ 
 }
 
 #check__menu{
@@ -168,10 +110,6 @@ nav ul li ul li a:hover{
 }
 
 @media screen and (max-width: 720px){
-
-    .search input{
-        display: none;
-    }
     
     .header__superior{
         padding: 10px;
@@ -184,13 +122,13 @@ nav ul li ul li a:hover{
     }
 
     .container__menu{
-        background-color: black;
+        background-color: white;
     }
     
 
     nav > ul{
         flex-direction: column;
-        background-color: black;
+        background-color: white;
         position: fixed;
         left: 0;
         top: 140px;
@@ -204,14 +142,6 @@ nav ul li ul li a:hover{
 
     nav > ul > li > a:hover{
         transform: scale(1);
-    }
-
-    nav ul li ul{
-        left: 90px;
-    }
-
-    nav > ul > li:hover ul{
-        top: 50px;
     }
 
     nav > ul > li:first-child a{
@@ -677,6 +607,101 @@ main{
     }
     
 }
+
+
+/* ----- AQUI INICIA LA PAGINA CONTACTOS ------*/
+
+
+.contact_form{  
+    width: 90%;
+    max-width: 1250px; 
+    height: auto;
+    margin-top: 20px;  
+    padding-top: 10px;
+    padding-bottom: 20px;    
+}
+    
+input{ 
+    width: 1150px;
+    height: 40px;
+    border-top: #0e0e0e;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;  
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+textarea{
+    width: 1150px; 
+    height: 150px; 
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: black; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+label{
+    display: block; 
+    float: center;  
+}
+
+
+.enviar{
+    width: 1150px;
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: black; 
+    border-style: none; 
+}
+  
+  
+.enviar p{
+    color: #fff; 
+}
+  
+  
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #570f0f;
+}
+  
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #570f0f;
+}
+
+@media screen and (max-width: 479px){
+
+    .contact_form{  
+        width: 90%;
+        max-width: 280px; 
+        margin: auto;
+    }
+        
+    input{ 
+        width: 280px;
+    }
+    
+    textarea{
+        width: 280px; 
+    }
+
+    .enviar{
+        width: 280px;
+    }
+}
+
+
+
 
 
   
