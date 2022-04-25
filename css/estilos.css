@@ -66,7 +66,7 @@ nav ul li{
     height: 100%;
     list-style: none;
     position: relative;
-    margin-top: -24px; /*modificación bootstrap*/
+    
 }
 
 nav > ul > li > a{
@@ -624,7 +624,7 @@ main{
 input{ 
     width: 1150px;
     height: 40px;
-    border-top: #0e0e0e;
+    border-top: black;
     border-left: none;
     border-right: none;
     border-width: 1px;  
@@ -683,8 +683,8 @@ label{
 
     .contact_form{  
         width: 90%;
-        max-width: 280px; 
-        margin: auto;
+        max-width: 280px;
+        margin: auto; 
     }
         
     input{ 
