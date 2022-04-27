@@ -313,17 +313,18 @@ main{
 .index__contenedor{
     display: grid;
     grid-template-columns: 40% 5% 40%;
-    gap: 80px;
+    gap: 0 60px;
     justify-content: center;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     
 }
 
 .separador__index{
-    width: 3px;
+    width: 2px;
     height: 200px;
     background-color: black;
+    visibility: visible;
 }
 
 .banner img{
@@ -332,22 +333,69 @@ main{
     object-fit: cover; 
 }
 
-.banner__vertical img{
-    visibility: hidden;
-    width: 0;
+.subasta__index{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: -3px;
+
+}
+.subtitulo__index{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 29.5px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.parrafo__index{
+    font-weight: 500;
+    text-align: right;
+    margin-top: -10px;
 }
 
 
 @media screen and (max-width: 479px){
+
+    .index__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px; 
+    }
+    
+    .separador__index{
+        visibility: hidden;
+        width: 0;
+    }
+    
     .banner img{
-        display: none;
+        width: 300px;
+        height: 35git0px;
+        object-fit: cover; 
+        margin-top: -180px;
     }
 
-    .banner__vertical img{
-        width: 100%;
-        visibility: visible;
-        margin-top: -40px;  
+    .subasta__index{
+        font-size: 28px;
+        font-weight: 700;
+        text-align: left;    
     }
+    .subtitulo__index{
+        font-size: 25px;
+        text-align: left;
+    }
+    
+    .parrafo__index{
+        text-align: left;
+        font-size: 14px;
+    }
+    
+
+    
+
+
 }
 
 /* ----- AQUI INICIA LA PAGINA SUBASA ACTUAL ------*/
@@ -372,7 +420,7 @@ main{
     text-align: right;
 }
 .separador{
-    padding: 2px;
+    padding: 1px;
     background-color: black;
     margin-bottom: 30px;
 }
