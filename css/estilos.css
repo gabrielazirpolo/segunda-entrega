@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -227,13 +226,16 @@ footer{
 /*iconos footer*/
 .fa-brands{
     margin-right: 10px;
+    font-size: 18px;
 
 }
 .fa-solid{
     margin-right: 10px;
+    font-size: 18px;
 }
 .fa-regular{
     margin-right: 10px;
+    font-size: 18px;
 }
 
 .box__copyright{
@@ -335,15 +337,15 @@ main{
 
 .subasta__index{
     text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 500;
     text-align: right;
     margin-bottom: -3px;
 
 }
 .subtitulo__index{
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 29.5px;
     text-align: right;
     margin-bottom: 20px;
@@ -677,9 +679,10 @@ main{
 input{ 
     width: 1150px;
     height: 40px;
-    border-top: black;
+    border-color: black;
+    border-top: none;
     border-left: none;
-    border-right: none;
+    border-right: 1px;
     border-width: 1px;  
     margin-top: 10px;  
     padding-left: 10px;
@@ -690,7 +693,6 @@ textarea{
     width: 1150px; 
     height: 150px; 
     border-style: solid; 
-    border-width: 1px; 
     border-color: black; 
     margin-top: 10px;  
     padding-left: 10px;
@@ -724,12 +726,12 @@ label{
   
 .formulario input:focus{
     outline:0;
-    border: 1px solid #570f0f;
+    border: 1px solid black;
 }
   
 .formulario textarea:focus{
     outline:0;
-    border: 1px solid #570f0f;
+    border: 1px solid black;
 }
 
 @media screen and (max-width: 479px){

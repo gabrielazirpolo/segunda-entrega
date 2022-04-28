@@ -1,0 +1,7 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Galeria Azur es una casa de Subastas dedicada a la venta de obra de grandes maestros del arte argentino”
+
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ARTE, SUBASTA, ARTE ARGENTINO, AUCTIONHOUSE, AUCTION, GALERIA DE ARTE, ART GALLERY, COMPRAR, ARTISTAS, PINTURA, ESCULTURA, GRABADO"
+
+Encabezado: para el encabezado del h1 utilicé el texto “Subasta Arte”
