@@ -5,3 +5,14 @@ Descripción: mediante la etiqueta meta name description, agregué el siguiente 
 Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ARTE, SUBASTA, ARTE ARGENTINO, AUCTIONHOUSE, AUCTION, GALERIA DE ARTE, ART GALLERY, COMPRAR, ARTISTAS, PINTURA, ESCULTURA, GRABADO"
 
 Encabezado: para el encabezado del h1 utilicé el texto “Subasta Arte”
+
+En el archivo subastaactuaal.html sumé el SEO con las siguientes características:
+
+keyword:ARTE, SUBASTA, ARTE ARGENTINO, AUCTIONHOUSE, AUCTION, GALERIA DE ARTE, ART GALLERY, COMPRAR, ARTISTAS, PINTURA, ESCULTURA, GRABADO, ARTE URBANO, ARTE CONTEMPORANEO
+content: Galeria Azur presenta la segunda edición Subasta Online Arte Urbano Contemporáneo, nucleando a los artistas de la escena
+
+
+En el archivo subastapasada.html sumé el SEO con las siguientes características:
+
+keyword:ARTE, SUBASTA, ARTE ARGENTINO, AUCTIONHOUSE, AUCTION, GALERIA DE ARTE, ART GALLERY, COMPRAR, ARTISTAS, PINTURA, ESCULTURA, GRABADO, 2021
+content:Catálogos de las subastaas realizadas por Galería Azur durante el año 2021
