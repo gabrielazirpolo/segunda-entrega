@@ -1,0 +1,21 @@
+
+
+@mixin flexColum{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRox {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexWrap {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+@mixin iconosFooter {
+    margin-right: 10px;
+    font-size: 1rem;   
+}
