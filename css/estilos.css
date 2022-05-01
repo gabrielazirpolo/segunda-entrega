@@ -278,7 +278,7 @@ p{
     text-align: left;
     font-size: medium;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 38px;
 }
 
 #titulos{
@@ -581,20 +581,34 @@ p{
 /* ----- AQUI INICIA LA PAGINA NOSOTROS ------*/
 
 .contenedor__nosotros{
-    display: flex;
+    display: grid;
+    grid-template-columns: 55% 5% 40%;
+    gap: 10px;
+    align-items: center;
 }
 
+.separador__nosotros{
+    width: 2px;
+    height: 340px;
+    background-color: black;
+    margin-left: 25px;
+}
+
+
+
 .fachada img{
-    width: 600px;
-    margin: 15px 0px 20px 40px;        
+    width: 450px;
+    margin: 0px ;        
 }
 
 .contenedor__staff{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
 }
+
 
 .card__staff{
     display: flex;
@@ -664,19 +678,15 @@ p{
 
 summary{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     list-style: none;
+    text-transform: uppercase;
 }
 
 summary::before{
     content: "+";
     padding-right: 1rem;
-}
-
-p{
-    font-size: large;
-    
 }
 
 
@@ -698,7 +708,7 @@ input{
 }
 
 textarea{
-    width: 1100px; 
+    width: 500px; 
     height: 150px; 
     border-style: none; 
     margin-top: 10px;  
@@ -709,7 +719,7 @@ textarea{
 
 label{
     display: block; 
-    float: center;  
+    float: center; 
 }
 
 
@@ -727,17 +737,19 @@ label{
   
   
 .enviar p{
-    color: #fff; 
+    color: #fff;
+    margin: 0px 200px; 
 }
   
   
 .formulario input:focus{
+    outline: 0;
     border-style: none;
 }
   
 .formulario textarea:focus{
     outline:0;
-    border: 1px solid black;
+    border-style:none;
 }
 
 @media screen and (max-width: 768px){

@@ -49,58 +49,14 @@
         <section id="textoMadre">
 
             <div class="subastas__pasadas">
-                <h2 id="titulos">Contacto</h2> 
+                <h2 id="titulos">Formulario</h2> 
+                <h2 class="subtitulo_sp">de Contacto</h2>
             </div>
 
-            <div class="separador"></div>
+            <p>Escribinos a mensajes@galeriaazur.com o dejanos un mensaje con el número de lote de tu interés.</p>
 
-
-            <section class="preguntasFrecuentes">
-                <div class="subastas__pasadas">
-                    <h2 id="titulos">Preguntas</h2> 
-                    <h2 class="subtitulo_sp">Frecuentes</h2>
-                </div>
-    
-                <details>
-                    <summary>Para comprar</summary>
-                    <p class="parrafo__preguntas">Dependiendo de la subasta en la cual quiera participar, usted tiene diferentes formas de comprar. 
-                    <br> <b>SUBASTA ONLINE</b>               
-                    <br>Desde una computadora o un dispositivo móvil, previo registro, usted podrá pujar y comprar directamente desde donde se encuentre y seguir la subasta sin necesidad de contactarse con nosotros.                       
-                    <br><b>Telefónicamente</b>   
-                    <br> En caso que desee pujar por teléfono deberá comunicarse con el departamento de ventas, quien se comunicará con usted al momento que su lote se esté subastando para realizar las pujas en su nombre. Para reservar este servicio deberá solicitarlo al menos 2 horas antes de que comience la subasta.     
-                    <br> <b>Oferta bajo sobre</b>
-                    <br>Si su preferencia es que un representante de Galeria Azur compre en su nombre, deberá contactarse al departamento de ventas y comunicarles el o los lotes de su interés. Ellos lo guiaran en el proceso para hacer efectiva su oferta.    
-                    <br> <b>EN UNA SUBASTA PRESENCIAL</b> 
-                    <br>Asistiendo a la sala el día del remate.
-                    <br>Para realizar una puja estando presente en la sala de subastas, levante su mano hasta que el martillero admita su oferta. Cuando solamente queda un oferente, el martillero bajará el martillo y declarara el lote vendido. Tenga en cuenta lo siguiente: una vez adquirido el lote un cobrador se acercará y le solicitará sus datos de contacto y el 30% del valor de martillo en concepto de seña, esta puede abonarse en efectivo o con un cheque.   
-                    <br><b>Telefónicamente</b>
-                    <br>Si desea pujar por teléfono, deberá comunicarse con el departamento de ventas y un asesor le tomará sus datos y la oferta por el lote de su interés. Durante el remate, un representante de Galeria Azur lo llamará desde la sala de subastas y transmitirá sus pujas al martillero. Para que su oferta sea efectiva es necesario reservar este servicio al menos 2 horas antes de que comience la subasta.  
-                    <br><b>Oferta bajo sobre</b>
-                    <br>Si no puede asistir a la subasta, ejecutaremos pujas por escrito confidenciales en su nombre. Cuando ejecutamos una oferta, el lote se pujará como si usted estuviese en la sala tratando de superar a los demás postores. En caso que se reciban ofertas idénticas, tendrá preferencia la que se reciba en primer lugar. Deberá enviar su oferta bajo sobre al menos 2 horas antes del comienzo de la subasta. Si es la primera vez que participa, le será solicitado los datos de su tarjeta de crédito como garantía.</p>
-                </details>
-    
-                <details>
-                    <summary>Para Vender</summary>
-                    <p class="parrafo__preguntas"> <b>SUBASTA PUBLICA</b> 
-                        <br>Las obras se comercializan en remate con un precio de base previamente estipulado. Se exhiben por el plazo de una semana en nuestra sala de exposiciones y se encuentran reproducidas en un catálogo impreso y online. Las ventas se realizan a través de un martillero público y al mejor postor.    
-                        <br><b>VENTA PRIVADA</b>
-                        <br>Las obras serán ofrecidas con total privacidad y confidencialidad a nuestros clientes, estas serán vendidas a un valor estipulado previamente con nuestros especialistas.</p>
-                </details>
-            </section>
-
-
-
-            
-            
             <div class="contenedor__formulario">
-
-                <div class="subastas__pasadas">
-                    <h2 id="titulos">Formulario</h2> 
-                    <h2 class="subtitulo_sp">de Contacto</h2>
-                </div>
-
                 <div class="formulario">
-                    <p>Escribinos a mensajes@galeriaazur.com o dejanos un mensaje con el número de lote de tu interés.Escribinos a mensajes@galeriaazur.com o dejanos un mensaje con el número de lote de tu interés.</p>
 
                       <form action="submeter-formulario.php" method="post">       
 
@@ -108,37 +64,38 @@
                               <label for="nombre" class="colocar_nombre">Nombre
                                 <span class="obligatorio">*</span>
                               </label>
+                              <div class="separador"></div>
                                 <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                                <div class="separador"></div>
                             </p>
                           
                             <p>
                               <label for="email" class="colocar_email">Email
                                 <span class="obligatorio">*</span>
                               </label>
+                              <div class="separador"></div>
                                 <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                                <div class="separador"></div>
                             </p>
                         
                             <p>
                               <label for="telefone" class="colocar_telefono">Teléfono
                               </label>
+                              <div class="separador"></div>
                                 <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                                <div class="separador"></div>
                             </p>       
                           
                             <p>
                               <label for="asunto" class="colocar_asunto">Asunto
                                 <span class="obligatorio">*</span>
                               </label>
+                              <div class="separador"></div>
                                 <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                                <div class="separador"></div>
                             </p>    
                           
                             <p>
                               <label for="mensaje" class="colocar_mensaje">Mensaje
                                 <span class="obligatorio">*</span>
-                              </label>                     
+                              </label>
+                              <div class="separador"></div>                     
                                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                             </p>                    
                           
@@ -147,18 +104,11 @@
                             <p class="aviso">
                               <span class="obligatorio"> * </span>los campos son obligatorios.
                             </p>
-                      </form>
-
-                    
+                      </form>  
                 </div>  
               </div>
-            
-            
-            
+            </div>              
         </section> 
-    
-
-        
     </main>
 
    <!--Aquí inicia el footer-->
