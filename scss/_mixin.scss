@@ -17,5 +17,10 @@
 
 @mixin iconosFooter {
     margin-right: 10px;
-    font-size: 1rem;   
+    font-size: 1.200rem;   
+}
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
 }
