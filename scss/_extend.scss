@@ -1,4 +1,45 @@
-.boton{
-    background-color: black;
-    color: white;
+
+/*ejercicios extend*/
+
+//el extend lo voy a implementar para las card de staff, al no tener avanzado sass en esa seccion//
+//cree un html con el nombre "extend" en la carpeta pages para que se pueda ver//
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 40px 20px 0px;
+}
+
+.avatar{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.perfiles:hover img {
+    filter: grayscale(0);
+}
+
+.nombre__staff {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cargo__staff {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.mail {
+    font-size: 14px;
+    text-align: center;
 }

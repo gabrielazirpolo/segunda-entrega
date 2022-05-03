@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*ejercicios extend*/
+.card, .ucard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 40px 20px 0px; }
+
+.avatar, .ucard > img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms; }
+
+.perfiles:hover img {
+  filter: grayscale(0); }
+
+.nombre__staff, .ucard > h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center; }
+
+.cargo__staff, .ucard > h4 {
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px; }
+
+.mail, .ucard > h5 {
+  font-size: 14px;
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -253,3 +287,5 @@ main {
 /*ejercicios de mapas*/
 .subasta__index {
   font-size: 2.3em; }
+
+/*ejercicio extend*/
