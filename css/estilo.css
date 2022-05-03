@@ -56,7 +56,7 @@ nav {
         color: #000000;
         text-transform: uppercase;
         text-decoration: none !important;
-        font-size: 1.25rem;
+        font-size: 1.25em;
         font-weight: 500;
         text-align: left;
         background-image: linear-gradient(transparent 0%, transparent 90%, black 90%, black 100%);
@@ -70,7 +70,7 @@ nav {
 
 /*ELEMENTOS RESPONSIVOS DEL MENU*/
 .icon__menu {
-  font-size: 26px;
+  font-size: 1.625em;
   color: #000000;
   cursor: pointer;
   width: 26px;
@@ -138,38 +138,38 @@ footer {
 
 .box__footer .terms {
   max-width: 350px;
-  font-size: 1rem; }
+  font-size: 1em; }
 
 .box__footer h3 {
   margin-bottom: 20px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1em;
   text-transform: uppercase; }
 
 .box__footer li {
   list-style: none;
-  font-size: 1rem;
+  font-size: 1em;
   margin-bottom: 5px;
   margin-left: -30px; }
 
 .box__footer a {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1em;
   margin-bottom: 5px;
   color: #000000; }
 
 /*iconos footer*/
 .fa-brands {
   margin-right: 10px;
-  font-size: 1.200rem; }
+  font-size: 1.200em; }
 
 .fa-solid {
   margin-right: 10px;
-  font-size: 1.200rem; }
+  font-size: 1.200em; }
 
 .fa-regular {
   margin-right: 10px;
-  font-size: 1.200rem; }
+  font-size: 1.200em; }
 
 /*copyright*/
 .box__copyright {
@@ -180,7 +180,7 @@ footer {
 
 .box__copyright p {
   margin-top: 20px;
-  font-size: 0.875rem; }
+  font-size: 0.875em; }
 
 /* ---- AQUI FIN CODIGOS DEL FOOTER------*/
 main {
@@ -198,13 +198,13 @@ main {
   padding: 20px 50px; }
   .index__contenedor .subasta__index {
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 2.3em;
     font-weight: 600;
     text-align: right; }
   .index__contenedor .subtitulo__index {
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 2.8rem;
+    font-size: 2.8em;
     text-align: right;
     margin-bottom: 20px; }
   .index__contenedor .parrafo__index {
@@ -230,14 +230,14 @@ main {
     padding: 0px;
     margin: -85px 0px 20px; }
     .index__contenedor .subasta__index {
-      font-size: 1.500rem;
+      font-size: 1.500em;
       text-align: center;
       margin-bottom: 5px; }
     .index__contenedor .subtitulo__index {
-      font-size: 1.800rem;
+      font-size: 1.800em;
       text-align: center; }
     .index__contenedor .parrafo__index {
-      font-size: 0.875rem;
+      font-size: 0.875em;
       text-align: center; }
   .separador__index {
     width: 200px;
@@ -249,3 +249,7 @@ main {
     height: 390px;
     object-fit: cover;
     margin-top: 20px; } }
+
+/*ejercicios de mapas*/
+.prueba__map {
+  font-size: 2.3em; }

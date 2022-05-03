@@ -17,8 +17,10 @@
 
 @mixin iconosFooter {
     margin-right: 10px;
-    font-size: 1.200rem;   
+    font-size: 1.200em;   
 }
+
+//mixin sin parametro//
 
 @mixin sizes ($width, $height) {
     width: $width;
