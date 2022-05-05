@@ -125,7 +125,7 @@ nav {
 #check__menu {
   display: none; }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 900px) {
   .header__superior {
     display: flex;
     justify-content: center;
@@ -261,7 +261,7 @@ main {
   height: 500px;
   object-fit: cover; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .index__contenedor {
     display: flex;
     flex-direction: column;
