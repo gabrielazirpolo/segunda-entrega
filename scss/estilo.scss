@@ -330,39 +330,3 @@ main {
     }
 }
 
-
-
-/*ejercicios de mapas*/
-
-$titulos:(
-    h1: 2.3em,
-    h2: 2.8em,
-    h3: 1em,
-);
-
-$h1: map-get($titulos, h1);
-
-//cree este mapa para los font size, cuando quiero colocar la variable $1// 
-//en la clase correcta que esta en la linea 266 la consola tira error, variable no encontrada//
-.subasta__index{
-    font-size: $h1;
-}
-
-
-/*ejercicio extend*/
-
-.ucard{
-    @extend .card;
-    > img {
-        @extend .avatar;
-    }
-    >h3{
-        @extend .nombre__staff;
-    }
-    >h4{
-        @extend .cargo__staff;
-    }
-    >h5{
-        @extend .mail;
-    }
-}

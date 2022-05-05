@@ -33,6 +33,11 @@
   font-size: 14px;
   text-align: center; }
 
+/*ejercicios de mapas*/
+.subasta__index {
+  font-size: 2.3em; }
+
+/*ejercicio extend*/
 * {
   margin: 0;
   padding: 0;
@@ -283,9 +288,3 @@ main {
     height: 390px;
     object-fit: cover;
     margin-top: 20px; } }
-
-/*ejercicios de mapas*/
-.subasta__index {
-  font-size: 2.3em; }
-
-/*ejercicio extend*/

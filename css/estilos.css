@@ -291,7 +291,7 @@ p {
 
 #titulos {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.875em;
     margin-bottom: 20px;
     font-weight: 700;
     text-align: left;
@@ -700,10 +700,27 @@ label {
     }
 
     textarea {
-        width: 280px;
+        width: 347px;
+        margin: auto;
     }
 
     .enviar {
         width: 280px;
+        margin: 0px 40px 20px;
+    }
+
+    .enviar p{
+        text-align: center;
+        margin: auto;
+    }
+
+    .subastas__pasadas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subtitulo_sp{
+        margin-left: 0;
+        margin-top: -10px;
     }
 }
