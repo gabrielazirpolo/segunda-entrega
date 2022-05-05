@@ -119,7 +119,7 @@ nav>ul>li>a:hover {
     display: none;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
 
     .header__superior {
         padding: 10px;
@@ -577,7 +577,7 @@ p {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 
     .contenedor__nosotros {
         display: flex;
@@ -687,7 +687,7 @@ label {
     border-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
 
     .contact_form {
         width: 90%;
