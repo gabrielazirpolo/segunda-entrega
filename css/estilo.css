@@ -94,7 +94,6 @@ nav {
         padding: 14px;
         color: #000000;
         text-transform: uppercase;
-        text-decoration: none !important;
         font-size: 1.25em;
         font-weight: 500;
         text-align: left;
@@ -105,7 +104,8 @@ nav {
         transition: background-size 300ms; }
         nav ul li a:hover {
           background-size: 100% 100%;
-          background-position-x: left; }
+          background-position-x: left;
+          color: #000000; }
 
 /*ELEMENTOS RESPONSIVOS DEL MENU*/
 .icon__menu {
@@ -125,7 +125,7 @@ nav {
 #check__menu {
   display: none; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 953px) {
   .header__superior {
     display: flex;
     justify-content: center;
@@ -222,10 +222,27 @@ footer {
   font-size: 0.875em; }
 
 /* ---- AQUI FIN CODIGOS DEL FOOTER------*/
+/* ---- CONTENEDOORES PADRES------*/
 main {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
   background-color: #ffffff;
-  padding: 0;
-  margin-top: 220px; }
+  margin-top: 220px;
+  padding: 14px; }
+
+p {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 38px; }
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 2px; }
+  p {
+    margin-bottom: 10px; } }
 
 /* ----- AQUI INICIA EL INDEX ------*/
 .index__contenedor {
@@ -261,13 +278,13 @@ main {
   height: 500px;
   object-fit: cover; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1338px) {
   .index__contenedor {
     display: flex;
     flex-direction: column;
     justify-items: center;
     padding: 0px;
-    margin: -85px 0px 20px; }
+    margin: -36px 0px 20px; }
     .index__contenedor .subasta__index {
       font-size: 1.500em;
       text-align: center;
@@ -288,3 +305,103 @@ main {
     height: 390px;
     object-fit: cover;
     margin-top: 20px; } }
+
+/* ----- AQUI INICIA LA SECCION SUBASTA ACTUAL ------*/
+.contenedor__Subasta {
+  display: grid;
+  grid-template-columns: 40% 57%;
+  gap: 50px; }
+
+.subasta__arte {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: right;
+  margin-bottom: -3px; }
+
+.subtitulo {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.844em;
+  text-align: right; }
+
+.separador {
+  padding: 1px;
+  background-color: black;
+  margin-bottom: 30px; }
+
+.parrafo__black {
+  font-weight: 500;
+  text-align: right;
+  margin-top: -10px; }
+
+.contenedor__lotes {
+  display: flex;
+  flex-direction: column; }
+
+/* -LOTES-*/
+.card__lotes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 50% 10%;
+  gap: 20px; }
+  .card__lotes img {
+    width: 250px;
+    margin-bottom: 40px; }
+
+.artista {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px; }
+
+.obra {
+  font-style: italic; }
+
+.base__texto {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px; }
+
+.boton__info {
+  margin: 20px 0px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: all 300ms ease; }
+
+.boton__info:hover {
+  transform: scale(1.1); }
+
+/* -MAS INFO-*/
+.boostrap__lote {
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 30px; }
+
+@media screen and (max-width: 968px) {
+  .contenedor__Subasta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+  .parrafo__black {
+    text-align: left;
+    margin: 0;
+    gap: 10px; }
+  .contenedor__lotes {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  .card__lotes {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .card__lotes img {
+    width: 250px;
+    margin-bottom: 20px;
+    margin: auto; }
+  .boostrap__lote {
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px; } }
