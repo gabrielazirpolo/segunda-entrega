@@ -12,25 +12,24 @@
     filter: grayscale(100%);
     cursor: pointer;
     transition: 400ms;
-
+    &:hover{
+        filter: grayscale(0);
+    }
 }
 
-.perfiles:hover img {
-    filter: grayscale(0);
-}
 
 .nombre__staff {
     margin-top: 20px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
 }
 
 .cargo__staff {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .mail {
@@ -48,20 +47,3 @@ p {
 }
 
 
-/*ejercicio extend*/
-
-.ucard{
-    @extend .card;
-    > img {
-        @extend .avatar;
-    }
-    >h3{
-        @extend .nombre__staff;
-    }
-    >h4{
-        @extend .cargo__staff;
-    }
-    >h5{
-        @extend .mail;
-    }
-}

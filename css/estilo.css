@@ -12,21 +12,20 @@
   filter: grayscale(100%);
   cursor: pointer;
   transition: 400ms; }
-
-.perfiles:hover img {
-  filter: grayscale(0); }
+  .avatar:hover, .ucard > img:hover {
+    filter: grayscale(0); }
 
 .nombre__staff, .ucard > h3 {
   margin-top: 20px;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center; }
 
 .cargo__staff, .ucard > h4 {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  letter-spacing: 1px; }
+  font-weight: 500; }
 
 .mail, .ucard > h5 {
   font-size: 14px;
@@ -39,7 +38,6 @@ p, h4 {
   font-weight: 400;
   line-height: 38px; }
 
-/*ejercicio extend*/
 * {
   margin: 0;
   padding: 0;
@@ -354,9 +352,8 @@ h3 {
   color: white;
   border: none;
   transition: all 300ms ease; }
-
-.boton__info:hover {
-  transform: scale(1.1); }
+  .boton__info:hover {
+    transform: scale(1.1); }
 
 /* -MAS INFO-*/
 .boostrap__lote {
@@ -390,3 +387,78 @@ h3 {
     width: auto;
     margin: auto;
     margin-bottom: 20px; } }
+
+/* ----- AQUI INICIA LA PAGINA SUBASAS PASADAS ------*/
+.titulo__secciones {
+  display: flex; }
+  .titulo__secciones h1 {
+    text-transform: uppercase;
+    font-size: 1.813em;
+    font-weight: 800; }
+  .titulo__secciones h2 {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.813em; }
+
+.contenedor__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; }
+  .contenedor__catalogo .catalogo img {
+    width: 250px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center center;
+    transition: all 300ms ease;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .contenedor__catalogo .catalogo img:hover {
+      transform: scale(1.1); }
+
+@media screen and (max-width: 900px) {
+  .contenedor__catalogo {
+    justify-content: center;
+    margin: auto; } }
+
+/* ----- AQUI INICIA LA PAGINA NOSOTROS ------*/
+.contenedor__nosotros {
+  display: grid;
+  grid-template-columns: 55% 5% 40%;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .contenedor__nosotros .separador__nosotros {
+    width: 2px;
+    height: 340px;
+    background-color: black;
+    margin-left: 25px; }
+  .contenedor__nosotros .fachada img {
+    width: 450px;
+    margin: 0px; }
+
+.contenedor__staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto; }
+
+@media screen and (max-width: 900px) {
+  .contenedor__nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; }
+    .contenedor__nosotros .fachada img {
+      width: 100%;
+      padding: 0;
+      margin: 15px 0px 15px; }
+    .contenedor__nosotros .separador__nosotros {
+      width: 340px;
+      height: 2px; }
+  .contenedor__staff {
+    display: flex;
+    flex-direction: column;
+    margin: auto; } }
