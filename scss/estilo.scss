@@ -233,12 +233,13 @@ footer {
     margin: auto;
     text-align: center;
     padding: 0px 40px;
+
+    p {
+        margin-top: 20px;
+        font-size: 0.875em;
+    }
 }
 
-.box__copyright p {
-    margin-top: 20px;
-    font-size: 0.875em;
-}
 
 /* ---- AQUI FIN CODIGOS DEL FOOTER------*/
 
@@ -247,7 +248,7 @@ footer {
 main {
     max-width: 1200px;
     margin: auto;
-    height: 100%; 
+    height: 100%;
     background-color: $color-fondo;
     margin-top: 220px;
     padding: 15px;
@@ -255,7 +256,7 @@ main {
 
 @media screen and (max-width: 900px) {
 
-    main{
+    main {
         margin-top: 114px;
     }
 }
@@ -347,74 +348,80 @@ main {
     display: grid;
     grid-template-columns: 40% 57%;
     gap: 50px;
-}
-
-.subasta__arte {
-    text-transform: uppercase;
-    font-size: 2.5em;
-    font-weight: 800;
-    text-align: right;
-    margin-bottom: -3px;
-}
-
-.subtitulo {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.844em;
-    text-align: right;
-}
-
-.separador {
-    padding: 1px;
-    background-color: black;
     margin-bottom: 30px;
+
+    .subasta__arte {
+        text-transform: uppercase;
+        font-size: 2.5em;
+        font-weight: 800;
+        text-align: right;
+        margin-bottom: -3px;
+    }
+
+    .subtitulo {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.844em;
+        text-align: right;
+    }
+
+    .separador {
+        @include separador;
+    }
+
+    .parrafo__black {
+        font-weight: 500;
+        text-align: right;
+        margin-top: -10px;
+    }
 }
 
-.parrafo__black {
-    font-weight: 500;
-    text-align: right;
-    margin-top: -10px;
-}
 
 .contenedor__lotes {
     @include flexColum;
-}
 
-/* -LOTES-*/
-
-.card__lotes {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 50% 10%;
-    gap: 20px;
-
-    img {
-        width: 100%;
-        margin-bottom: 40px;
+    .separador {
+        @include separador;
     }
-    
+
+    /* -LOTES-*/
+
+    .card__lotes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 50% 10%;
+        gap: 60px;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            @extend h3;
+        }
+
+        h4 {
+            @extend p;
+        }
+
+        .boton__info {
+            margin: 20px 0px;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            transition: all 300ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
 }
 
-h3 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-h4{
-    @extend p;
-}
-
-.boton__info {
-    margin: 20px 0px;
-    padding: 15px;
-    background-color: black;
-    color: white;
-    border: none;
-    transition: all 300ms ease;
-    &:hover {
-        transform: scale(1.1);}
-}
 
 /* -MAS INFO-*/
 
@@ -424,37 +431,53 @@ h4{
     padding-bottom: 30px;
 }
 
+.mas__info {
+    .separador {
+        @include separador;
+    }
+
+    h3 {
+        @extend h3;
+    }
+
+    h4 {
+        @extend p;
+    }
+}
+
+
+
 @media screen and (max-width: 968px) {
 
     .contenedor__Subasta {
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
 
-    .parrafo__black {
-        text-align: left;
-        margin: 0;
-        gap: 10px;
+        .parrafo__black {
+            text-align: left;
+            margin: 0;
+            gap: 10px;
+        }
     }
 
     .contenedor__lotes {
         display: flex;
         flex-direction: column;
         margin: auto;
-    }
 
-    .card__lotes {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+        .card__lotes {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
 
-    .card__lotes img {
-        width: 250px;
-        margin-bottom: 20px;
-        margin: auto;
+            img {
+                width: 250px;
+                margin-bottom: 20px;
+                margin: auto;
+            }
+        }
     }
 
 
@@ -469,12 +492,13 @@ h4{
 /* ----- AQUI INICIA LA PAGINA SUBASAS PASADAS ------*/
 .titulo__secciones {
     display: flex;
+
     h1 {
         text-transform: uppercase;
         font-size: 1.813em;
         font-weight: 800;
     }
-    
+
     h2 {
         margin-left: 10px;
         text-transform: uppercase;
@@ -496,8 +520,10 @@ h4{
         transition: all 300ms ease;
         margin-top: 30px;
         margin-bottom: 30px;
+
         &:hover {
-            transform: scale(1.1);}
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -530,7 +556,7 @@ h4{
         width: 450px;
         margin: 0px;
     }
-    
+
 }
 
 .contenedor__staff {
@@ -541,23 +567,25 @@ h4{
     margin: auto;
 }
 
-.ucard{
+.ucard {
     @extend .card;
-    > img {
+
+    >img {
         @extend .avatar;
     }
-    >h3{
+
+    >h3 {
         @extend .nombre__staff;
     }
-    >h4{
+
+    >h4 {
         @extend .cargo__staff;
     }
-    >h5{
+
+    >h5 {
         @extend .mail;
     }
 }
-
-
 
 @media screen and (max-width: 900px) {
 
@@ -578,15 +606,10 @@ h4{
         }
     }
 
-    
-
     .contenedor__staff {
         display: flex;
         flex-direction: column;
         margin: auto;
     }
 
-
 }
-
-

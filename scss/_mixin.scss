@@ -20,6 +20,12 @@
     font-size: 1.200em;   
 }
 
+@mixin separador{
+    padding: 1px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
 
 //mixin sin parametro//
 
