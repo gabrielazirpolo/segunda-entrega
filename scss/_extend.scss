@@ -1,9 +1,3 @@
-
-/*ejercicios extend*/
-
-//el extend lo voy a implementar para las card de staff, al no tener avanzado sass en esa seccion//
-//cree un html con el nombre "extend" en la carpeta pages para que se pueda ver//
-
 .card {
     display: flex;
     flex-direction: column;
@@ -45,21 +39,12 @@
 }
 
 
-
-/*ejercicios de mapas*/
-
-$titulos:(
-    h1: 2.3em,
-    h2: 2.8em,
-    h3: 1em,
-);
-
-$h1: map-get($titulos, h1);
-
-//cree este mapa para los font size, cuando quiero colocar la variable $1// 
-//en la clase correcta que esta en la linea 266 la consola tira error, variable no encontrada//
-.subasta__index{
-    font-size: $h1;
+p {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: $lectura;
+    font-weight: 400;
+    line-height: 38px;
 }
 
 
