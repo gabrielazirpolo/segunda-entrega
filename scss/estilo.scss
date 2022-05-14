@@ -250,7 +250,7 @@ main {
     margin: auto;
     height: 100%;
     background-color: $color-fondo;
-    margin-top: 220px;
+    margin-top: 200px;
     padding: 15px;
 }
 
@@ -267,9 +267,7 @@ main {
     display: grid;
     grid-template-columns: 40% 5% 40%;
     gap: 0 60px;
-    justify-content: center;
     align-items: center;
-    padding: 20px 50px;
 
     .subasta__index {
         text-transform: uppercase;
@@ -286,10 +284,9 @@ main {
         margin-bottom: 20px;
     }
 
-    .parrafo__index {
-        font-weight: 500;
-        text-align: right;
-        margin-top: -10px;
+    .boton {
+        display: flex;
+        justify-content: right;
     }
 
 }
@@ -304,13 +301,17 @@ main {
     object-fit: cover;
 }
 
+.fancy {
+    @extend .fancy;
+}
+
 @media screen and (max-width: 1338px) {
 
     .index__contenedor {
         @include flexColum;
         justify-items: center;
         padding: 0px;
-        margin: -36px 0px 20px;
+        margin: -7px 0px 20px;
 
         .subasta__index {
             font-size: 1.500em;
@@ -323,9 +324,8 @@ main {
             text-align: center;
         }
 
-        .parrafo__index {
-            font-size: 0.875em;
-            text-align: center;
+        .boton {
+            justify-content: center;
         }
     }
 
@@ -389,7 +389,7 @@ main {
     .card__lotes {
         width: 100%;
         display: grid;
-        grid-template-columns: 30% 50% 10%;
+        grid-template-columns: 30% 40% 10%;
         gap: 60px;
         margin-bottom: 30px;
 
@@ -423,7 +423,7 @@ main {
 }
 
 
-/* -MAS INFO-*/
+/* -CODIGOS CORRESPONDIENTES A LAS PAGINAS LOTE-*/
 
 .boostrap__lote {
     max-width: 500px;
@@ -444,8 +444,6 @@ main {
         @extend p;
     }
 }
-
-
 
 @media screen and (max-width: 968px) {
 
@@ -471,6 +469,7 @@ main {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            gap: 0;
 
             img {
                 width: 250px;
@@ -479,7 +478,6 @@ main {
             }
         }
     }
-
 
     .boostrap__lote {
         width: auto;
