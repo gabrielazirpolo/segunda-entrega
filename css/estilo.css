@@ -1,33 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.card, .ucard {
+.card, .contenedor__staff .ucard {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px 40px 20px 0px; }
 
-.avatar, .ucard > img {
+.avatar, .contenedor__staff .ucard > img {
   height: 180px;
   width: 180px;
   border-radius: 50%;
   filter: grayscale(100%);
   cursor: pointer;
   transition: 400ms; }
-  .avatar:hover, .ucard > img:hover {
+  .avatar:hover, .contenedor__staff .ucard > img:hover {
     filter: grayscale(0); }
 
-.nombre__staff, .ucard > h3, .contenedor__lotes .card__lotes .ucard > h3, .mas__info .ucard > h3 {
+.nombre__staff, .contenedor__staff .ucard > h3, .contenedor__staff .contenedor__lotes .card__lotes .ucard > h3, .contenedor__staff .mas__info .ucard > h3 {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center; }
 
-.cargo__staff, .ucard > h4 {
+.cargo__staff, .contenedor__staff .ucard > h4 {
   font-size: 16px;
   text-align: center;
   font-weight: 500; }
 
-.mail, .ucard > h5 {
+.mail, .contenedor__staff .ucard > h5 {
   font-size: 14px;
   text-align: center; }
 
@@ -150,7 +150,9 @@ header {
   margin: auto;
   padding: 20px 0px; }
   .header__superior .logo img {
-    width: 250px; }
+    width: 250px;
+    animation: fadeIn;
+    animation-duration: 1s; }
 
 /*BARRA MENU*/
 .container__menu {
@@ -170,7 +172,9 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    animation: fadeIn;
+    animation-duration: 1s; }
     nav ul li {
       height: 100%;
       list-style: none;
@@ -268,7 +272,7 @@ footer {
   max-width: 350px;
   font-size: 1em; }
 
-.box__footer h3, .box__footer .contenedor__lotes .card__lotes h3, .contenedor__lotes .card__lotes .box__footer h3 {
+.box__footer h3, .box__footer .contenedor__lotes .card__lotes h3, .contenedor__lotes .card__lotes .box__footer h3, .box__footer .mas__info h3, .mas__info .box__footer h3 {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 1em;
@@ -333,26 +337,36 @@ main {
     text-transform: uppercase;
     font-size: 2.3em;
     font-weight: 600;
-    text-align: right; }
+    text-align: right;
+    animation: fadeInLeft;
+    animation-duration: 1s; }
   .index__contenedor .subtitulo__index {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2.4em;
     text-align: right;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    animation: fadeInLeft;
+    animation-duration: 1s; }
   .index__contenedor .boton {
     display: flex;
-    justify-content: right; }
+    justify-content: right;
+    animation: fadeInLeft;
+    animation-duration: 1s; }
 
 .separador__index {
   width: 3px;
   height: 200px;
-  background-color: #000000; }
+  background-color: #000000;
+  animation: fadeInLeft;
+  animation-duration: 1s; }
 
 .banner img {
   width: 500px;
   height: 500px;
-  object-fit: cover; }
+  object-fit: cover;
+  animation: fadeInRight;
+  animation-duration: 1s; }
 
 @media screen and (max-width: 1338px) {
   .index__contenedor {
@@ -381,9 +395,11 @@ main {
 /* ----- AQUI INICIA LA SECCION SUBASTA ACTUAL ------*/
 .contenedor__Subasta {
   display: grid;
-  grid-template-columns: 40% 57%;
+  grid-template-columns: repeat(2, 40% 57%);
   gap: 50px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  animation: fadeIn;
+  animation-duration: 1s; }
   .contenedor__Subasta .subasta__arte {
     text-transform: uppercase;
     font-size: 2.5em;
@@ -415,7 +431,7 @@ main {
   .contenedor__lotes .card__lotes {
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 40% 10%;
+    grid-template-columns: repeat(3, 30% 40% 10%);
     gap: 60px;
     margin-bottom: 30px; }
     .contenedor__lotes .card__lotes img {
@@ -460,7 +476,7 @@ main {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      gap: 0; }
+      gap: 10px; }
       .contenedor__lotes .card__lotes img {
         width: 250px;
         margin-bottom: 20px;
@@ -472,7 +488,10 @@ main {
 
 /* ----- AQUI INICIA LA PAGINA SUBASAS PASADAS ------*/
 .titulo__secciones {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  animation: fadeIn;
+  animation-duration: 1s; }
   .titulo__secciones h1 {
     text-transform: uppercase;
     font-size: 1.813em;
@@ -486,7 +505,9 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 48px; }
+  gap: 48px;
+  animation: fadeIn;
+  animation-duration: 1s; }
   .contenedor__catalogo .catalogo img {
     width: 230px;
     min-height: 300px;
@@ -497,6 +518,8 @@ main {
     border-radius: 10px; }
 
 @media screen and (max-width: 900px) {
+  .titulo__secciones h2 {
+    margin-left: 0px; }
   .contenedor__catalogo {
     justify-content: center;
     margin: auto; } }
@@ -508,7 +531,9 @@ main {
   gap: 10px;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  animation: fadeIn;
+  animation-duration: 1s; }
   .contenedor__nosotros .separador__nosotros {
     width: 2px;
     height: 340px;
@@ -524,6 +549,11 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: auto; }
+
+.separador {
+  padding: 1px;
+  background-color: black;
+  margin-bottom: 30px; }
 
 @media screen and (max-width: 900px) {
   .contenedor__nosotros {
@@ -542,3 +572,88 @@ main {
     display: flex;
     flex-direction: column;
     margin: auto; } }
+
+/* ----- AQUI INICIA LA PAGINA CONTACTOS ------*/
+summary {
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  list-style: none;
+  text-transform: uppercase; }
+
+summary::before {
+  content: "+";
+  padding-right: 1rem; }
+
+.contenedor__formulario {
+  max-width: 1250px;
+  height: auto;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+input {
+  width: 500px;
+  height: 40px;
+  border-style: none;
+  padding-left: 10px;
+  margin-bottom: 20px; }
+
+textarea {
+  width: 500px;
+  height: 150px;
+  border-style: none;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px; }
+
+label {
+  display: block;
+  float: center; }
+
+.enviar {
+  width: 500px;
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: black;
+  border-style: none; }
+
+.enviar p, .enviar .contenedor__lotes .card__lotes h4, .contenedor__lotes .card__lotes .enviar h4, .enviar .mas__info h4, .mas__info .enviar h4 {
+  color: #fff;
+  margin: 0px 200px; }
+
+.formulario input:focus {
+  outline: 0;
+  border-style: none; }
+
+.formulario textarea:focus {
+  outline: 0;
+  border-style: none; }
+
+@media screen and (max-width: 900px) {
+  .contact_form {
+    width: 90%;
+    max-width: 280px;
+    margin: auto; }
+  input {
+    width: 280px; }
+  textarea {
+    width: 347px;
+    margin: auto; }
+  .enviar {
+    width: 280px;
+    margin: 0px 40px 20px; }
+  .enviar p, .enviar .contenedor__lotes .card__lotes h4, .contenedor__lotes .card__lotes .enviar h4, .enviar .mas__info h4, .mas__info .enviar h4 {
+    text-align: center;
+    margin: auto; }
+  .subastas__pasadas {
+    display: flex;
+    flex-direction: column; }
+  .subtitulo_sp {
+    margin-left: 0;
+    margin-top: -10px; } }

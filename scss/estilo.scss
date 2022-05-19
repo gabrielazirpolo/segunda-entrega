@@ -30,6 +30,8 @@ header {
 
     .logo img {
         width: 250px;
+        animation: fadeIn; 
+        animation-duration: 1s;
     }
 }
 
@@ -57,6 +59,8 @@ nav {
         justify-content: space-between;
         margin: 0;
         padding: 0;
+        animation: fadeIn; 
+        animation-duration: 1s;
 
         li {
             height: 100%;
@@ -129,6 +133,7 @@ nav {
     }
 
     nav {
+        
         ul {
             flex-direction: column;
             background-color: $color-fondo;
@@ -140,7 +145,7 @@ nav {
             z-index: 100;
             opacity: 0;
             visibility: hidden;
-
+            
             li:first-child a {
                 background-position: 20px;
             }
@@ -274,6 +279,8 @@ main {
         font-size: 2.3em;
         font-weight: 600;
         text-align: right;
+        animation: fadeInLeft; 
+        animation-duration: 1s; 
     }
 
     .subtitulo__index {
@@ -282,11 +289,15 @@ main {
         font-size: 2.4em;
         text-align: right;
         margin-bottom: 20px;
+        animation: fadeInLeft; 
+        animation-duration: 1s;
     }
 
     .boton {
         display: flex;
         justify-content: right;
+        animation: fadeInLeft; 
+        animation-duration: 1s;
     }
 
 }
@@ -294,11 +305,15 @@ main {
 .separador__index {
     @include sizes(3px, 200px);
     background-color: #000000;
+    animation: fadeInLeft; 
+    animation-duration: 1s;
 }
 
 .banner img {
     @include sizes(500px, 500px);
     object-fit: cover;
+    animation: fadeInRight; 
+    animation-duration: 1s;
 }
 
 .boton__general {
@@ -344,9 +359,12 @@ main {
 
 .contenedor__Subasta {
     display: grid;
-    grid-template-columns: 40% 57%;
+    grid-template-columns: repeat(2, 40% 57% );
     gap: 50px;
     margin-bottom: 30px;
+    animation: fadeIn; 
+    animation-duration: 1s;
+    
 
     .subasta__arte {
         text-transform: uppercase;
@@ -387,7 +405,7 @@ main {
     .card__lotes {
         width: 100%;
         display: grid;
-        grid-template-columns: 30% 40% 10%;
+        grid-template-columns: repeat(3, 30% 40% 10% );
         gap: 60px;
         margin-bottom: 30px;
 
@@ -467,7 +485,7 @@ main {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            gap: 0;
+            gap: 10px;
 
             img {
                 width: 250px;
@@ -487,7 +505,9 @@ main {
 
 /* ----- AQUI INICIA LA PAGINA SUBASAS PASADAS ------*/
 .titulo__secciones {
-    display: flex;
+    @include flexWrap;
+    animation: fadeIn; 
+    animation-duration: 1s;
 
     h1 {
         text-transform: uppercase;
@@ -507,6 +527,8 @@ main {
     @include flexWrap;
     justify-content: space-between;
     gap: 48px;
+    animation: fadeIn; 
+    animation-duration: 1s;
 
     .catalogo img {
         width: 230px;
@@ -517,10 +539,18 @@ main {
         margin-bottom: 30px;
         border-radius: 10px;
     }
+    
 }
 
 
 @media screen and (max-width: 900px) {
+
+    .titulo__secciones{
+
+        h2{
+            margin-left: 0px;
+        }
+    }
 
     .contenedor__catalogo {
         justify-content: center;
@@ -537,6 +567,8 @@ main {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    animation: fadeIn; 
+    animation-duration: 1s;
 
     .separador__nosotros {
         @include sizes(2px, 340px);
@@ -557,26 +589,30 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+
+    .ucard {
+        @extend .card;
+    
+        >img {
+            @extend .avatar;
+        }
+    
+        >h3 {
+            @extend .nombre__staff;
+        }
+    
+        >h4 {
+            @extend .cargo__staff;
+        }
+    
+        >h5 {
+            @extend .mail;
+        }
+    }   
 }
 
-.ucard {
-    @extend .card;
-
-    >img {
-        @extend .avatar;
-    }
-
-    >h3 {
-        @extend .nombre__staff;
-    }
-
-    >h4 {
-        @extend .cargo__staff;
-    }
-
-    >h5 {
-        @extend .mail;
-    }
+.separador {
+    @include separador;
 }
 
 @media screen and (max-width: 900px) {
@@ -604,4 +640,121 @@ main {
         margin: auto;
     }
 
+}
+
+
+/* ----- AQUI INICIA LA PAGINA CONTACTOS ------*/
+
+summary {
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+summary::before {
+    content: "+";
+    padding-right: 1rem;
+}
+
+
+
+.contenedor__formulario {
+    max-width: 1250px;
+    height: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    border-style: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    border-style: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+label {
+    display: block;
+    float: center;
+}
+
+
+.enviar {
+    width: 500px;
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: black;
+    border-style: none;
+}
+
+
+.enviar p {
+    color: #fff;
+    margin: 0px 200px;
+}
+
+
+.formulario input:focus {
+    outline: 0;
+    border-style: none;
+}
+
+.formulario textarea:focus {
+    outline: 0;
+    border-style: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    .contact_form {
+        width: 90%;
+        max-width: 280px;
+        margin: auto;
+    }
+
+    input {
+        width: 280px;
+    }
+
+    textarea {
+        width: 347px;
+        margin: auto;
+    }
+
+    .enviar {
+        width: 280px;
+        margin: 0px 40px 20px;
+    }
+
+    .enviar p{
+        text-align: center;
+        margin: auto;
+    }
+
+    .subastas__pasadas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subtitulo_sp{
+        margin-left: 0;
+        margin-top: -10px;
+    }
 }
