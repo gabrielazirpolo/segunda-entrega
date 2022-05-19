@@ -224,7 +224,8 @@ nav {
     justify-content: center;
     padding: 10px; }
     .header__superior .logo img {
-      width: 200px; }
+      width: 200px;
+      animation: none; }
   .container__menu {
     height: 34px; }
   nav ul {
@@ -574,86 +575,3 @@ main {
     margin: auto; } }
 
 /* ----- AQUI INICIA LA PAGINA CONTACTOS ------*/
-summary {
-  font-weight: 500;
-  font-size: 20px;
-  cursor: pointer;
-  list-style: none;
-  text-transform: uppercase; }
-
-summary::before {
-  content: "+";
-  padding-right: 1rem; }
-
-.contenedor__formulario {
-  max-width: 1250px;
-  height: auto;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px; }
-
-input {
-  width: 500px;
-  height: 40px;
-  border-style: none;
-  padding-left: 10px;
-  margin-bottom: 20px; }
-
-textarea {
-  width: 500px;
-  height: 150px;
-  border-style: none;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px; }
-
-label {
-  display: block;
-  float: center; }
-
-.enviar {
-  width: 500px;
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: black;
-  border-style: none; }
-
-.enviar p, .enviar .contenedor__lotes .card__lotes h4, .contenedor__lotes .card__lotes .enviar h4, .enviar .mas__info h4, .mas__info .enviar h4 {
-  color: #fff;
-  margin: 0px 200px; }
-
-.formulario input:focus {
-  outline: 0;
-  border-style: none; }
-
-.formulario textarea:focus {
-  outline: 0;
-  border-style: none; }
-
-@media screen and (max-width: 900px) {
-  .contact_form {
-    width: 90%;
-    max-width: 280px;
-    margin: auto; }
-  input {
-    width: 280px; }
-  textarea {
-    width: 347px;
-    margin: auto; }
-  .enviar {
-    width: 280px;
-    margin: 0px 40px 20px; }
-  .enviar p, .enviar .contenedor__lotes .card__lotes h4, .contenedor__lotes .card__lotes .enviar h4, .enviar .mas__info h4, .mas__info .enviar h4 {
-    text-align: center;
-    margin: auto; }
-  .subastas__pasadas {
-    display: flex;
-    flex-direction: column; }
-  .subtitulo_sp {
-    margin-left: 0;
-    margin-top: -10px; } }
