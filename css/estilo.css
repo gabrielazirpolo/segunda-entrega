@@ -151,8 +151,7 @@ header {
   padding: 20px 0px; }
   .header__superior .logo img {
     width: 250px;
-    animation: fadeIn;
-    animation-duration: 1s; }
+    animation: none !important; }
 
 /*BARRA MENU*/
 .container__menu {
@@ -224,8 +223,7 @@ nav {
     justify-content: center;
     padding: 10px; }
     .header__superior .logo img {
-      width: 200px;
-      animation: none; }
+      width: 200px; }
   .container__menu {
     height: 34px; }
   nav ul {
@@ -322,7 +320,9 @@ main {
   height: 100%;
   background-color: #ffffff;
   margin-top: 200px;
-  padding: 15px; }
+  padding: 15px;
+  animation: fadeIn;
+  animation-duration: 1s; }
 
 @media screen and (max-width: 900px) {
   main {
@@ -333,41 +333,33 @@ main {
   display: grid;
   grid-template-columns: 40% 5% 40%;
   gap: 0 60px;
-  align-items: center; }
+  align-items: center;
+  animation: slideInUp;
+  animation-duration: 1s; }
   .index__contenedor .subasta__index {
     text-transform: uppercase;
     font-size: 2.3em;
     font-weight: 600;
-    text-align: right;
-    animation: fadeInLeft;
-    animation-duration: 1s; }
+    text-align: right; }
   .index__contenedor .subtitulo__index {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2.4em;
     text-align: right;
-    margin-bottom: 20px;
-    animation: fadeInLeft;
-    animation-duration: 1s; }
+    margin-bottom: 20px; }
   .index__contenedor .boton {
     display: flex;
-    justify-content: right;
-    animation: fadeInLeft;
-    animation-duration: 1s; }
+    justify-content: right; }
 
 .separador__index {
   width: 3px;
   height: 200px;
-  background-color: #000000;
-  animation: fadeInLeft;
-  animation-duration: 1s; }
+  background-color: #000000; }
 
 .banner img {
   width: 500px;
   height: 500px;
-  object-fit: cover;
-  animation: fadeInRight;
-  animation-duration: 1s; }
+  object-fit: cover; }
 
 @media screen and (max-width: 1338px) {
   .index__contenedor {
@@ -398,9 +390,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 40% 57%);
   gap: 50px;
-  margin-bottom: 30px;
-  animation: fadeIn;
-  animation-duration: 1s; }
+  margin-bottom: 30px; }
   .contenedor__Subasta .subasta__arte {
     text-transform: uppercase;
     font-size: 2.5em;
@@ -490,9 +480,7 @@ main {
 /* ----- AQUI INICIA LA PAGINA SUBASAS PASADAS ------*/
 .titulo__secciones {
   display: flex;
-  flex-wrap: wrap;
-  animation: fadeIn;
-  animation-duration: 1s; }
+  flex-wrap: wrap; }
   .titulo__secciones h1 {
     text-transform: uppercase;
     font-size: 1.813em;
@@ -506,9 +494,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 48px;
-  animation: fadeIn;
-  animation-duration: 1s; }
+  gap: 48px; }
   .contenedor__catalogo .catalogo img {
     width: 230px;
     min-height: 300px;
@@ -532,9 +518,7 @@ main {
   gap: 10px;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 30px;
-  animation: fadeIn;
-  animation-duration: 1s; }
+  margin-bottom: 30px; }
   .contenedor__nosotros .separador__nosotros {
     width: 2px;
     height: 340px;

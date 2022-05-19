@@ -26,6 +26,10 @@
     margin-bottom: 30px;
 }
 
+@mixin efecto {
+    animation: fadeIn; 
+    animation-duration: 1s;  
+}
 
 //mixin sin parametro//
 
