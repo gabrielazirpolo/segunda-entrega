@@ -561,6 +561,8 @@ main {
 
 @media screen and (max-width: 900px) {
   .formulario__contacto {
+    display: flex;
+    justify-content: center;
     margin: auto; }
     .formulario__contacto input {
       width: 300px; }
