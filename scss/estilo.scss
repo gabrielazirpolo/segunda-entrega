@@ -58,7 +58,7 @@ nav {
         justify-content: space-between;
         margin: 0;
         padding: 0;
-        @include efecto; 
+        @include efecto;
 
         li {
             height: 100%;
@@ -122,7 +122,7 @@ nav {
         padding: 10px;
 
         .logo img {
-            width: 200px;    
+            width: 200px;
         }
     }
 
@@ -131,7 +131,7 @@ nav {
     }
 
     nav {
-        
+
         ul {
             flex-direction: column;
             background-color: $color-fondo;
@@ -143,7 +143,7 @@ nav {
             z-index: 100;
             opacity: 0;
             visibility: hidden;
-            
+
             li:first-child a {
                 background-position: 20px;
             }
@@ -255,7 +255,7 @@ main {
     background-color: $color-fondo;
     margin-top: 200px;
     padding: 15px;
-    @include efecto; 
+    @include efecto;
 }
 
 @media screen and (max-width: 900px) {
@@ -272,15 +272,14 @@ main {
     grid-template-columns: 40% 5% 40%;
     gap: 0 60px;
     align-items: center;
-    animation: slideInUp; 
+    animation: slideInUp;
     animation-duration: 1s;
     
-
     .subasta__index {
         text-transform: uppercase;
         font-size: 2.3em;
         font-weight: 600;
-        text-align: right; 
+       text-align: right;
     }
 
     .subtitulo__index {
@@ -294,6 +293,18 @@ main {
     .boton {
         display: flex;
         justify-content: right;
+
+        .boton__index {
+            padding: 15px 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            transition: all 300ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 
 }
@@ -306,10 +317,6 @@ main {
 .banner img {
     @include sizes(500px, 500px);
     object-fit: cover;
-}
-
-.boton__general {
-    @extend .boton__general;
 }
 
 @media screen and (max-width: 1338px) {
@@ -351,7 +358,7 @@ main {
 
 .contenedor__Subasta {
     display: grid;
-    grid-template-columns: repeat(2, 40% 57% );
+    grid-template-columns: repeat(2, 40% 57%);
     gap: 50px;
     margin-bottom: 30px;
 
@@ -361,6 +368,8 @@ main {
         font-weight: 800;
         text-align: right;
         margin-bottom: -3px;
+        animation: fadeInLeft;
+        animation-duration: 1s;
     }
 
     .subtitulo {
@@ -368,6 +377,8 @@ main {
         font-weight: 500;
         font-size: 1.844em;
         text-align: right;
+        animation: fadeInLeft;
+        animation-duration: 1s;
     }
 
     .separador {
@@ -378,9 +389,10 @@ main {
         font-weight: 500;
         text-align: right;
         margin-top: -10px;
+        animation: fadeInLeft;
+        animation-duration: 1s;
     }
 }
-
 
 .contenedor__lotes {
     @include flexColum;
@@ -394,7 +406,7 @@ main {
     .card__lotes {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 30% 40% 10% );
+        grid-template-columns: repeat(3, 30% 40% 10%);
         gap: 60px;
         margin-bottom: 30px;
 
@@ -514,7 +526,7 @@ main {
     @include flexWrap;
     justify-content: space-between;
     gap: 48px;
-    
+
     .catalogo img {
         width: 230px;
         min-height: 300px;
@@ -523,15 +535,28 @@ main {
         margin-top: 30px;
         margin-bottom: 30px;
         border-radius: 10px;
-    } 
+    }
+
+    .boton__catalogo {
+        padding: 15px 78px;
+        background-color: black;
+        color: white;
+        border: none;
+        transition: all 300ms ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
 }
 
 
 @media screen and (max-width: 900px) {
 
-    .titulo__secciones{
+    .titulo__secciones {
 
-        h2{
+        h2 {
             margin-left: 0px;
         }
     }
@@ -574,23 +599,23 @@ main {
 
     .ucard {
         @extend .card;
-    
+
         >img {
             @extend .avatar;
         }
-    
+
         >h3 {
             @extend .nombre__staff;
         }
-    
+
         >h4 {
             @extend .cargo__staff;
         }
-    
+
         >h5 {
             @extend .mail;
         }
-    }   
+    }
 }
 
 .separador {
@@ -626,4 +651,113 @@ main {
 
 
 /* ----- AQUI INICIA LA PAGINA CONTACTOS ------*/
+
+.contact_form{ 
+    display: flex;
+    justify-content: center; 
+    max-width: 1000px; 
+    height: auto;
+    margin: 24px auto;
+    padding: 20px;
+    border-radius: 10px;  
+  }
+  
+  
+  input{
+    width: 800px; 
+    height: 40px;  
+    border-style: solid;
+    border-top: #000000;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    border-color: black; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{ 
+    width: 800px; 
+    height: 150px; 
+    border-style: solid; 
+    border-top: #000000;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    border-color: black; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  #enviar{
+    padding: 1px 369px;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: all 300ms ease;
+
+        &:hover {
+            transform: scale(1.1);
+        } 
+
+    p{
+        color: white;
+        text-transform: uppercase;
+    } 
+  }
+  
+  
+  
+  span{
+    color: gray; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+   
+  
+  h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #8a06066e;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #8a06066e;
+  }
+  
+
+
 
