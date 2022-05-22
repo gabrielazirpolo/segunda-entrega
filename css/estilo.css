@@ -254,14 +254,14 @@ nav {
 /* -----  AQUI INICIAN LOS CODIGOS DEL FOOTER------*/
 footer {
   width: 100%;
-  padding: 30px 0px;
-  background-color: #ffffff; }
+  padding: 30px 0px; }
   footer .container__footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1400px;
-    margin: auto; }
+    margin: auto;
+    background-color: black; }
     footer .container__footer .box__footer {
       display: flex;
       flex-direction: column;
@@ -270,16 +270,20 @@ footer {
 .box__footer .terms {
   max-width: 350px;
   font-size: 1em; }
+  .box__footer .terms p, .box__footer .terms .contenedor__lotes .card__lotes h4, .contenedor__lotes .card__lotes .box__footer .terms h4, .box__footer .terms .mas__info h4, .mas__info .box__footer .terms h4 {
+    color: white; }
 
 .box__footer h3, .box__footer .contenedor__lotes .card__lotes h3, .contenedor__lotes .card__lotes .box__footer h3, .box__footer .mas__info h3, .mas__info .box__footer h3 {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 1em;
+  color: white;
   text-transform: uppercase; }
 
 .box__footer li {
   list-style: none;
   font-size: 1em;
+  color: white;
   margin-bottom: 5px;
   margin-left: -30px; }
 
@@ -287,30 +291,34 @@ footer {
   margin-top: 10px;
   font-size: 1em;
   margin-bottom: 5px;
-  color: #000000; }
+  color: white; }
 
 /*iconos footer*/
 .fa-brands {
   margin-right: 10px;
-  font-size: 1.200em; }
+  font-size: 1.200em;
+  color: white; }
 
 .fa-solid {
   margin-right: 10px;
-  font-size: 1.200em; }
+  font-size: 1.200em;
+  color: white; }
 
 .fa-regular {
   margin-right: 10px;
-  font-size: 1.200em; }
+  font-size: 1.200em;
+  color: white; }
 
 /*copyright*/
 .box__copyright {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  padding: 0px 40px; }
+  padding: 0px 20px; }
   .box__copyright p, .box__copyright .contenedor__lotes .card__lotes h4, .contenedor__lotes .card__lotes .box__copyright h4, .box__copyright .mas__info h4, .mas__info .box__copyright h4 {
     margin-top: 20px;
-    font-size: 0.875em; }
+    font-size: 0.875em;
+    text-align: center; }
 
 /* ---- AQUI FIN CODIGOS DEL FOOTER------*/
 /* ---- CONTENEDOR PADRE------*/
@@ -494,7 +502,9 @@ main {
 /* ----- AQUI INICIA LA PAGINA SUBASAS PASADAS ------*/
 .titulo__secciones {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  animation: fadeInLeft;
+  animation-duration: 1s; }
   .titulo__secciones h1 {
     text-transform: uppercase;
     font-size: 1.813em;
@@ -625,10 +635,7 @@ label {
   padding: 1px 369px;
   background-color: black;
   color: white;
-  border: none;
-  transition: all 300ms ease; }
-  #enviar:hover {
-    transform: scale(1.1); }
+  border: none; }
   #enviar p, #enviar .contenedor__lotes .card__lotes h4, .contenedor__lotes .card__lotes #enviar h4, #enviar .mas__info h4, .mas__info #enviar h4 {
     color: white;
     text-transform: uppercase; }
@@ -640,11 +647,6 @@ span {
   font-size: 13px;
   color: #0e0e0e; }
 
-h3, .contenedor__lotes .card__lotes h3, .mas__info h3 {
-  font-size: 16px;
-  padding-bottom: 30px;
-  color: #0e0e0e; }
-
 ::-webkit-input-placeholder {
   color: #a8a8a8; }
 
@@ -653,8 +655,8 @@ h3, .contenedor__lotes .card__lotes h3, .mas__info h3 {
 
 .formulario input:focus {
   outline: 0;
-  border: 1px solid #8a06066e; }
+  border: 1px solid gray; }
 
 .formulario textarea:focus {
   outline: 0;
-  border: 1px solid #8a06066e; }
+  border: 1px solid gray; }

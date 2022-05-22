@@ -175,13 +175,14 @@ nav {
 footer {
     width: 100%;
     padding: 30px 0px;
-    background-color: $color-fondo;
+    
 
     .container__footer {
         @include flexWrap;
         justify-content: space-between;
         max-width: 1400px;
         margin: auto;
+        background-color: black;
 
         .box__footer {
             @include flexColum;
@@ -193,6 +194,10 @@ footer {
 .box__footer .terms {
     max-width: 350px;
     font-size: $lectura;
+    
+    p{
+        color: white;
+    } 
 }
 
 
@@ -200,12 +205,14 @@ footer {
     margin-bottom: 20px;
     font-weight: 600;
     font-size: $lectura;
+    color: white;
     text-transform: uppercase;
 }
 
 .box__footer li {
     list-style: none;
     font-size: $lectura;
+    color: white;
     margin-bottom: 5px;
     margin-left: -30px;
 }
@@ -214,7 +221,7 @@ footer {
     margin-top: 10px;
     font-size: $lectura;
     margin-bottom: 5px;
-    color: $color-tipografia;
+    color: white;
 }
 
 /*iconos footer*/
@@ -235,11 +242,12 @@ footer {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding: 0px 40px;
+    padding: 0px 20px;
 
     p {
         margin-top: 20px;
         font-size: 0.875em;
+        text-align: center;
     }
 }
 
@@ -507,6 +515,8 @@ main {
 /* ----- AQUI INICIA LA PAGINA SUBASAS PASADAS ------*/
 .titulo__secciones {
     @include flexWrap;
+    animation: fadeInLeft;
+    animation-duration: 1s;
 
     h1 {
         text-transform: uppercase;
@@ -704,11 +714,6 @@ main {
     background-color: black;
     color: white;
     border: none;
-    transition: all 300ms ease;
-
-        &:hover {
-            transform: scale(1.1);
-        } 
 
     p{
         color: white;
@@ -729,12 +734,6 @@ main {
   }
    
   
-  h3{
-    font-size: 16px; 
-    padding-bottom: 30px;
-    color: #0e0e0e;   
-  }
-  
   
   
   ::-webkit-input-placeholder {
@@ -749,13 +748,13 @@ main {
   
   .formulario input:focus{
     outline:0;
-    border: 1px solid #8a06066e;
+    border: 1px solid gray;
   }
   
   
   .formulario textarea:focus{
     outline:0;
-    border: 1px solid #8a06066e;
+    border: 1px solid gray;
   }
   
 
