@@ -145,7 +145,7 @@ nav {
     background-color: #ffffff;
     position: fixed;
     left: 0;
-    top: 120px;
+    top: 106px;
     width: 100%;
     height: 0px;
     z-index: 100;
@@ -164,7 +164,6 @@ nav {
   main {
     margin-top: 158px; } }
 
-/* -----  FIN CODIGOS DE MENU------*/
 /* -----  AQUI INICIAN LOS CODIGOS DEL FOOTER------*/
 footer {
   width: 100%;
@@ -300,13 +299,13 @@ main {
       text-align: center; }
     .index__contenedor .boton {
       justify-content: center; }
-  .separador__index {
-    display: none; }
-  .banner img {
-    width: 380px;
-    height: 445px;
-    object-fit: cover;
-    margin-top: 20px; } }
+    .index__contenedor .separador__index {
+      display: none; }
+    .index__contenedor .banner img {
+      width: 360px;
+      height: 445px;
+      object-fit: cover;
+      margin-top: 20px; } }
 
 /* ----- AQUI INICIA LA SECCION SUBASTA ACTUAL ------*/
 .contenedor__Subasta {

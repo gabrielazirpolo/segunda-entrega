@@ -1,4 +1,4 @@
-
+//mixin flex//
 
 @mixin flexColum{
     display: flex;
@@ -15,11 +15,15 @@
     flex-wrap: wrap;    
 }
 
+//mixin iconos//
+
 @mixin iconosFooter {
     margin-right: 10px;
     font-size: 1.200em;  
     color: white; 
 }
+
+//mixin separadores//
 
 @mixin separador{
     padding: 1px;
